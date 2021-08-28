@@ -13,4 +13,4 @@ phases:
       commands:
         - echo build completed on `date`
     artifacts:
-      - target/demo1.0.jar
+      - build/libs/demo-0.0.1-SNAPSHOT.war
