@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+    pre_build:
+      - echo nothing to do in the prebuild
+    build:
+      commands:
+        - echo buidl start on `date`
+        - ./gradlew build
+    post_build:
+      commands:
+        - echo build completed on `date`
+    artifacts:
+      - target/demo1.0.jar
