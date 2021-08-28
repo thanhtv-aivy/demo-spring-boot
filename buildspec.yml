@@ -13,6 +13,6 @@ phases:
   post_build:
     commands:
       - echo build completed on `date`
-  artifacts:
-    files:
-      - build/libs/demo-0.0.1-SNAPSHOT.war
+artifacts:
+  files:
+    - build/libs/demo-0.0.1-SNAPSHOT.war
