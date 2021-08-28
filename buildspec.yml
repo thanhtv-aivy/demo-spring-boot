@@ -3,14 +3,14 @@ phases:
   install:
     runtime-versions:
       java: corretto11
-    pre_build:
-      - echo nothing to do in the prebuild
-    build:
-      commands:
-        - echo buidl start on `date`
-        - ./gradlew build
-    post_build:
-      commands:
-        - echo build completed on `date`
-    artifacts:
-      - build/libs/demo-0.0.1-SNAPSHOT.war
+  pre_build:
+    - echo nothing to do in the prebuild
+  build:
+    commands:
+      - echo buidl start on `date`
+      - ./gradlew build
+  post_build:
+    commands:
+      - echo build completed on `date`
+  artifacts:
+    - build/libs/demo-0.0.1-SNAPSHOT.war
