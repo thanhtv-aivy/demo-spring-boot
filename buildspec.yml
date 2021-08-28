@@ -4,7 +4,8 @@ phases:
     runtime-versions:
       java: corretto11
   pre_build:
-    - echo nothing to do in the prebuild
+    commands:
+      - echo nothing to do in the prebuild
   build:
     commands:
       - echo buidl start on `date`
@@ -13,4 +14,5 @@ phases:
     commands:
       - echo build completed on `date`
   artifacts:
-    - build/libs/demo-0.0.1-SNAPSHOT.war
+    files:
+      - build/libs/demo-0.0.1-SNAPSHOT.war
